@@ -1,3 +1,13 @@
+# Visual Studio specific files
+.vs*
+*.vcx*
+*.suo
+*.user
+*.aps
+*.log
+x64
+x86
+
 # Prerequisites
 *.d
 
