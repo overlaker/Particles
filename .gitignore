@@ -1,7 +1,7 @@
 # Visual Studio specific files
 .vs*
-*.vcx*
 *.suo
+*.filters
 *.user
 *.aps
 *.log

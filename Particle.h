@@ -2,7 +2,7 @@
 #include "Matrices.h"
 #include <SFML/Graphics.hpp>
 
-#define M_PI 3.1415926535897932384626433
+#define P_PI 3.1415926535897932384626433
 const float G = 1000;      //Gravity
 const float TTL = 5.0;  //Time To Live
 const float SCALE = 0.999;
