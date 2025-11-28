@@ -1,6 +1,6 @@
 #include "Particle.h"
 
-Particle::Particle(RenderTarget& target, int numPoints, Vector2i mouseClickPosition) : m_A(2, numPoints)
+Particle::Particle(RenderTarget& target, int numPoints, Vector2i mouseClickPosition, bool rightClick) : m_A(2, numPoints)
 {
     m_ttl = TTL;
     m_numPoints = numPoints;
@@ -13,7 +13,7 @@ Particle::Particle(RenderTarget& target, int numPoints, Vector2i mouseClickPosit
     m_vx = rand() % 401 + 100;
     if (rand() % 2 > 0) m_vx = -m_vx;
     m_vy = rand() % 501 + 300;      //higher initial vertical (upward) velocity for poping up effects!
-    m_color1 = Color::White;
+    m_color1 = rightClick ? Color::Black : Color::White;
     m_color2 = Color(rand() % 256, rand() % 256, rand() % 256);
 
     //build the vertices:
